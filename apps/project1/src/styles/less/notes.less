@@ -1,0 +1,79 @@
+@import "variables.less"; // 引入全局变量
+.note-in-add{
+  padding-right: 20px;
+	float: left;
+}
+.img-in-note{
+	height: 68px;
+	width: 68px;
+	padding: 18px;
+}
+.operapp{
+	  height: 28px;
+    margin-top: -8px;
+    border: none;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 2px 20px;
+    display: none;
+    position: absolute;
+}
+.div-app-name{
+	height: 23px;
+	padding-top: 8px;
+	text-align: center;
+	word-break: break-all;
+	width: 70px;
+}
+.note-in-add-unsel{
+	.note-in-add;
+	.img-in-note{
+		border: @border-unselapp-border;
+	}
+	.operapp{
+		color: #fff;
+		background-color: @color-unselapp-border;
+	}
+	.operapp:hover{
+		background-color: @color-unselapp-border-hover;
+	}
+	.div-app-name{
+		color: @color-unselapp-text;
+	}
+}
+.note-in-add-unsel:hover{
+	.operapp{
+		display: inline;
+	}
+}
+.note-in-add-sel:hover{
+	.operapp{
+		display: inline;
+	}
+}
+.note-in-add-sel{
+	.note-in-add;
+	.img-in-note{
+		border: @border-selapp-border;
+		img{
+			filter: grayscale(100%);
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			-ms-filter: grayscale(100%);
+			-o-filter: grayscale(100%);
+		}
+	}
+	.operapp{
+		color: #000;
+		background-color: @color-selapp-border;	
+	}
+	.operapp:hover{
+		background-color: @color-selapp-border-hover;	
+	}
+	.div-app-name{
+		color: @color-selapp-text;
+	}
+}
+
+
+

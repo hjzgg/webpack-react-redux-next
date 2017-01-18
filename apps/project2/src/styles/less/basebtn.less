@@ -1,0 +1,200 @@
+@import "variables.less"; // 引入全局变量
+//按钮样式
+//按钮hover时文字的阴影效果
+.text-shadow {
+  text-shadow:0px 4px 4px rgba(0,0,0,0.6);
+}
+//带iconfont的按钮样式
+.has-icon-btn {
+  padding: 0px 12px 0px 10px;
+  i {
+  	margin-right: 9px;
+  	font-size: 14px;
+  }
+}
+//由于表格上方的按钮高度为30
+.yycc-btn-height{
+	padding: 5px 12px 4px 10px;
+}
+//以下为直接用的btn样式
+.yycc-btn{
+	padding: 9px 40px 8px 40px;
+	border-radius: 3px;
+	border: none;
+	color: @color-btn-text;
+	cursor: pointer;
+	font {
+		vertical-align: inherit;
+	}
+}
+//两个字保存按钮
+.save-btn{
+	.yycc-btn;
+	background-color: @color-save-btn;
+}
+.save-btn:hover{
+	.text-shadow;
+}
+.save-btn:active{
+	background-color: @color-save-btn-active;
+}
+.save-btn[disabled]{
+	.btn-disabled;
+}
+//四个字保存按钮的样式
+.save-fourfont-btn{
+	.save-btn;
+	padding: 9px 30px 8px 30px;
+}
+.save-fourfont-btn:hover{
+	.text-shadow;
+}
+.save-fourfont-btn:active{
+  background-color: @color-save-btn-active;
+}
+.save-fourfont-btn[disabled]{
+	.btn-disabled;
+}
+.cancel-btn{
+	.yycc-btn;
+	border: @border-cancel-btn;
+	color:@color-cancel-btn-text;
+	background-color: @color-cancel-btn;
+}
+.cancel-btn:hover{
+	.text-shadow;
+}
+.cancel-btn:active{
+	background-color: @color-cancel-btn-active;
+}
+//新增
+.add-btn {
+	.yycc-btn;
+	.has-icon-btn;
+	.yycc-btn-height;
+	background-color: @color-save-btn;
+}
+.add-btn:hover{
+	.text-shadow;
+}
+.add-btn:active{
+	background-color: @color-save-btn-active;
+}
+.add-btn-disabled{
+	.yycc-btn;
+	.has-icon-btn;
+	.btn-disabled;
+	.yycc-btn-height;
+	background-color:  @color-save-btn-disabled;
+}
+//删除
+.delete-btn{
+	.yycc-btn;
+	.has-icon-btn;
+	.yycc-btn-height;
+	background-color: @color-warning-btn;
+}
+.delete-btn:hover{
+	.text-shadow;
+}
+.delete-btn:active{
+	background-color: @color-warning-btn-active;
+}
+//停用
+.close-btn{
+	.yycc-btn;
+	.has-icon-btn;
+	.yycc-btn-height;
+	background-color: @color-warning-btn;
+}
+.close-btn:hover{
+	.text-shadow;
+}
+.close-btn:active{
+  background-color: @color-warning-btn-active;
+}
+//启用
+.open-btn{
+	.yycc-btn;
+	.has-icon-btn;
+	.yycc-btn-height;
+	background-color: @color-open-btn;
+}
+.open-btn:hover{
+  .text-shadow;
+}
+.open-btn:active{
+	background-color: @color-open-btn-active;
+}
+//返回
+.back-btn {
+	.yycc-btn;
+	.has-icon-btn; 
+	background-color: @color-back-btn;
+	color: @color-back-btn-text;
+	border: 1px solid #bac7cf;
+	height: 28px;
+}
+.back-noicon-btn{
+	.yycc-btn;
+	background-color: @color-back-btn;
+	color: @color-back-btn-text;
+	border: 1px solid #bac7cf;
+  height: 40px;
+}
+.back-btn-crumb{
+	background-color: @color-back-btn;
+	color: @color-back-btn-text;
+	border: 1px solid #bac7cf;
+	font-size: @font-size-globle;
+	padding: 0 3px;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+//按钮禁用样式
+.btn-disabled{
+	cursor: not-allowed;
+}
+
+//人员调动
+.move-btn {
+	.yycc-btn;
+	.has-icon-btn;
+	.yycc-btn-height;
+	background-color: @color-save-btn;
+}
+.move-btn:hover{
+	.text-shadow;
+}
+.move-btn:active{
+	background-color: @color-save-btn-active;
+}
+.move-btn-disabled{
+	.yycc-btn;
+	.has-icon-btn;
+	.btn-disabled;
+	.yycc-btn-height;
+	background-color:  @color-save-btn-disabled;
+}
+
+
+//人员兼职
+.partJob-btn {
+	.yycc-btn;
+	.has-icon-btn;
+	.yycc-btn-height;
+	background-color: @color-save-btn;
+}
+.partJob-btn:hover{
+	.text-shadow;
+}
+.partJob-btn:active{
+	background-color: @color-save-btn-active;
+}
+.partJob-btn-disabled{
+	.yycc-btn;
+	.has-icon-btn;
+	.btn-disabled;
+	.yycc-btn-height;
+	background-color:  @color-save-btn-disabled;
+}
